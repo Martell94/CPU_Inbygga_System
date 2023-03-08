@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-/*definering av Operationer*/
+/* Definering av Operationer */
 #define NOP    0x00
 #define LOAD   0x01
 #define WRITE  0x02
@@ -37,7 +37,7 @@
 #define SEI    0x19
 #define CLI    0x1A
 
-/*definering av addreser PORT*/
+/* Definering av addresser PORT */
 #define GPIO0 0
 #define GPIO1 1
 #define GPIO2 2
