@@ -59,7 +59,6 @@
 #define GPIO18 18
 #define GPIO19 19
 
-
 #define R0  0x00 /* Address for CPU register R0. */
 #define R1  0x01 /* Address for CPU register R1. */
 #define R2  0x02 /* Address for CPU register R2. */
