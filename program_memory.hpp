@@ -6,8 +6,6 @@
 
 /* Statiska funktioner: */
 
-static inline uint8_t op_code;
-static inline uint8_t op1;
-static inline uint32_t op2;
+static inline uint64_t assemble(const uint8_t op_code, const uint8_t op1, const uint32_t op2);
 
 #endif PROGRAM_MEMORY_H_
