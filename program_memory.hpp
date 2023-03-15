@@ -11,6 +11,6 @@
 
 
 
-
+static uint64_t program_memory[PROGRAM_MEMORY_DATA_SIZE];
 
 #endif PROGRAM_MEMORY_H_
