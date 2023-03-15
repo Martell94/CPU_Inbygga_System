@@ -1,4 +1,3 @@
-
 #ifndef DATA_MEMORY_H_
 #define  DATA_MEMORY_H_
 
@@ -36,4 +35,4 @@ void data_memory_write(const uint32_t data,const uint16_t addres);
 ********************************************************************************/
 uint32_t data_memory_read(const uint16_t addres);
 
-#endif //DATA_MEMORY_H_
+#endif // _DATA_MEMORY_H_

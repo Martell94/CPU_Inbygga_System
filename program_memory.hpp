@@ -1,6 +1,5 @@
-#ifndef PROGRAM_MEMORY_H_
-#define PROGRAM_MEMORY_H_
-
+#ifndef PROGRAM_MEMORY_HPP_
+#define PROGRAM_MEMORY_HPP_
 
 #include "header.hpp"
 
@@ -9,8 +8,8 @@
 
 uint64_t program_memory[PROGRAM_MEMORY_DATA_SIZE];
 
-uint64_t program_memory_write(const uint8_t op_code, const uint8_t op1, const uint32_t op2);
+uint64_t assemble(const uint8_t op_code, const uint8_t op1, const uint32_t op2);
 
 uint64_t read_program_memory(const uint8_t address);
 
-#endif PROGRAM_MEMORY_H_
+#endif /* PROGRAM_MEMORY_HPP_ */

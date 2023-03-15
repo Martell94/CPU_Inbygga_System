@@ -29,7 +29,7 @@ void data_memory_write(const uint32_t data,const uint16_t addres)
 {
    if (addres <= DATA_MEMORY_DATA_WIDTH) return;
    data_memory[addres] = data;
-   return
+   return;
 }
 
 /********************************************************************************
