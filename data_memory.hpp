@@ -9,6 +9,7 @@
 
 static uint32_t data_memory[DATA_MEMORY_ADDRESS_WIDTH];
 
+
 /********************************************************************************
  *
  *  data_memory_reset: clearar data minnet
