@@ -2,9 +2,9 @@
 #ifndef CONTROL_UNIT_HPP_
 #define CONTROL_UNIT_HPP_
 
-#include "header.hpp"
+#include "header.h"
 
-enum 
+
 
 void instruction_cycle(void);
 
