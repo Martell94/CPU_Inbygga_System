@@ -93,4 +93,14 @@
 #define R30 0x1E /* Address for CPU register R30. */
 #define R31 0x1F /* Address for CPU register R31. */
 
+/********************************************************************************
+* cpu_state: Enumeration för läge på cpu:n.
+********************************************************************************/
+enum cpu_state
+{
+   CPU_STATE_FETCH,  /* Hämmtar nästa instrution från programminet. */
+   CPU_STATE_DECODE, /* Avkodar instrutionen från programminet. */
+   CPU_STATE_EXECUTE /* Exekvirerar intrutionen från programminet. */
+};
+
 #endif 

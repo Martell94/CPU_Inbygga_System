@@ -27,7 +27,7 @@ void data_memory_reset(void)
 ********************************************************************************/
 void data_memory_write(const uint32_t data,const uint16_t addres)
 {
-   if (addres <= DATA_MEMORY_DATA_WIDTH) return;
+   if (addres < DATA_MEMORY_DATA_WIDTH) return;
    data_memory[addres] = data;
    return;
 }
@@ -41,6 +41,6 @@ void data_memory_write(const uint32_t data,const uint16_t addres)
 ********************************************************************************/
 uint32_t data_memory_read(const uint16_t addres)
 {
-   if (addres <= DATA_MEMORY_DATA_WIDTH) return 0;
+   if (addres < DATA_MEMORY_DATA_WIDTH) return 0;
    return data_memory[addres];
 }
