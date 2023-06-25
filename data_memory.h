@@ -1,38 +1,40 @@
+/********************************************************************************
+* data_memory.h:
+********************************************************************************/
 #ifndef DATA_MEMORY_H_
-#define  DATA_MEMORY_H_
+#define DATA_MEMORY_H_
 
-#include <stdint.h>
+/* Inkluderingsdirektiv: */
+#include "cpu.h"
 
-#define DATA_MEMORY_DATA_WIDTH  32   /* 32 bits per address. */
-#define DATA_MEMORY_ADDRESS_WIDTH 5000 /*  addresses (0 - 5000). */
+#define DATA_MEMORY_ADDRESS_WIDTH 300
 
-static uint32_t data_memory[DATA_MEMORY_ADDRESS_WIDTH];
-
+/* Funktionsdeklarationer: */
 
 /********************************************************************************
  *
  *  data_memory_reset: clearar data minnet
  * 
 ********************************************************************************/
-void data_memory_reset(void);
+void reset_data_memory(void);
 
 /********************************************************************************
  *
- *  data_memory_write: Skriver ett värde till en addres i dataminnet.
+ *  write_data_memory: Skriver ett värde till en addres i dataminnet.
  *    
- *                   data: värdet som skall skrivas till minnesadressen.
- *                   addres: addresen i dataminnet dit värdet skall skrivars. 
+ *                   value: värdet som skall skrivas till minnesadressen.
+ *                   address: addresen i dataminnet dit värdet skall skrivars. 
  * 
 ********************************************************************************/
-void data_memory_write(const uint32_t data,const uint16_t addres);
+int write_data_memory(const uint16_t address, const uint32_t value);
 
 /********************************************************************************
  *
- *  data_memory_read: läser ett värde från en addres i dataminnet.
+ *  read_data_memory: läser ett värde från en addres i dataminnet.
  *    
- *                 addres: addresen i dataminnet där ett värde skall läsas. 
+ *                 address: addresen i dataminnet där ett värde skall läsas. 
  * 
 ********************************************************************************/
-uint32_t data_memory_read(const uint16_t addres);
+uint32_t read_data_memory(const uint16_t address);
 
-#endif // _DATA_MEMORY_H_
+#endif /* DATA_MEMORY_H_ */
