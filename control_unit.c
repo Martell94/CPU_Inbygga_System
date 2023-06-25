@@ -8,8 +8,8 @@
 
 /* Statiska variabler: */
 static uint16_t pc;			// Programräknare
-static uint16_t sr;			// Statusregister
-static uint16_t ir;			// Instruktionsregister
+static uint32_t sr;			// Statusregister
+static uint64_t ir;			// Instruktionsregister
 
 static uint16_t OP_code;	// OP-kod
 static uint16_t op1;			// Operand 1
